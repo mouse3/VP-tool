@@ -1,2 +1,5 @@
 # VP-tool
-this is a tool specialized in wireless attacks
+esta tool esta especializada en ataques inalambricos 
+contiene distintos tipos de herramientas como GhostF,Linset,o Eviltrust
+
+
