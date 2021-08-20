@@ -16,8 +16,9 @@ def comprIP():
      direccion_equipo = socket.gethostbyname(nombre_equipo)
      print("n-host" + nombre_equipo)
      print("IP:" + direccion_equipo)
-     print("pulse 1 para salir")
      time.sleep(5)
+     os.system("clear")
+     start_menu()
 
 #    <--Metasploit-->
 def TWebRS():
