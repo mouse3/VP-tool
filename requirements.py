@@ -1,6 +1,5 @@
-from colors import red, green, blue, white, yellow
-
-import os, time
+import time
+import os
 
 blue()
 print("1 -->> Arch")
