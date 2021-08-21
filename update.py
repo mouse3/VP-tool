@@ -1,3 +1,3 @@
 import os
-os.system("apt-get upgrade")
-os.system("apt-get update")
+os.system("sudo apt-get upgrade")
+os.system("sudo apt-get update")
