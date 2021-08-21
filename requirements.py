@@ -23,9 +23,11 @@ if x == "2":
     yellow()
     print("Downloading...")
     os.system("sudo apt install git bash wpscan php dnsmasq hostapd -y")
-    time.sleep(1)
-    red()
-    print("Done!")
-    time.sleep(2)
-    exit()
+    try:
+        os.system("sudo apt install git bash wpscan php dnsmasq hostapd -y /home/kali/VP-tool")
+    while True:
+            time.sleep(1)
+            print("Done!")
+            time.sleep(2)
+            exit()
   
