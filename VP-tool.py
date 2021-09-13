@@ -1,4 +1,4 @@
-import os
+port os
 import time
 import json
 import subprocess
@@ -18,6 +18,7 @@ def comprIP():
     print("IP:" + direccion_equipo)
     time.sleep(5)
     os.system("clear")
+    decoracion()
     start_menu()
 
 #    <--Metasploit-->
@@ -31,13 +32,13 @@ def TWebRS():
         print("              |                    3 -->> Execute Tool")
         print("              |                    4 -->> Exit")
         x = input("              ↳ ")
-        if x == "1":
+        if option == "1":
             os.system("https://github.com/HackeRStrategy/Tool-Web-RS")
             print("Download!!!")
             time.sleep(1)
             while True:
                 TWebRS()
-        if x == "2":
+        if option == "2":
             os.system("cd")
             os.system("cd Tool-Web-RS")
             os.system("bash ToolWeb-RS.sh")
@@ -45,7 +46,7 @@ def TWebRS():
             os.system("clear")
             while True:
                 TWebRS()
-        if x == "3":
+        if option == "3":
             os.system("cd")
             os.system("cd Tool-Web-RS")
             os.system("ls")
@@ -54,10 +55,31 @@ def TWebRS():
             os.system("python2 Real-DNS")
             while True:
                 TWebRS()
-        if x == "4":
+        if option == "4":
             os.system("clear")
+            decoracion()
             start_menu()
 
+def aircrack():
+    print("1       |          -->install")
+    print("2       |          -->Run")
+    print("3       |          -->exit")
+    if option == "1":
+        os.system("sudo apt-get upgrade")
+        os.system("sudo apt-get update")
+        os.system("sudo apt-get install aircrack-ng")
+        print("Download!!!")
+        time.sleep(1)
+        while True:
+           aircrack()
+    if option == "2":
+        SSID = input("Nmb de la red:")
+        CHANEL = input("puerto de red:")
+        os.system("airbase-ng --ssid"+SSID+"wlo1")
+    if option == "2":
+        os.system("clear")
+        decoracion()
+        start_menu()
 def msf():
     os.system("clear")
     print(banner)
@@ -67,7 +89,7 @@ def msf():
     print("              |                    4 -->> Exit")
     x = input("              ↳ ")
 
-    if x == "1":
+    if option == "1":
         
         print("")
         ip = input("IP -->> ")
@@ -81,7 +103,7 @@ def msf():
         while True:
             msf()
 
-    if x == "2":
+    if option == "2":
         
         print("")
         ip = input("IP -->> ")
@@ -95,7 +117,7 @@ def msf():
         while True:
             msf()
 
-    if x == "3":
+    if option == "3":
 
         print("")
         ip = input("IP -->> ")
@@ -109,7 +131,8 @@ def msf():
         while True:
             msf()
 
-    if x == "4":
+    if option == "4":
+        decoracion()
         start_menu()
 def Ghostf():
         os.system("clear")
@@ -118,7 +141,7 @@ def Ghostf():
         print("              |                    2 -->> Execute Tool")
         print("              |                    3 -->> Exit\n")
         x = input("-->: ")
-        if x == "1":
+        if option == "1":
             os.system("git clone https://github.com/ParikhKadam/ghost-1")
             os.system("cd ghost-1")
             os.system("ch mod +x install.sh")
@@ -126,10 +149,11 @@ def Ghostf():
             time.sleep(5)
             while True:
                 Ghostf()
-        if x == "2":
+        if option == "2":
             os.system("ghost")
-        if x == "3":
+        if option == "3":
             os.system("clear")
+            decoracion()
             start_menu()
 
 
@@ -141,20 +165,21 @@ def Goyscript():
         print("                                   2 -->> Execute Tool ")
         print("                                   3 -->> Exit         ")
         x = input("              ↳ ")
-        if x == "1":
+        if option == "1":
             os.system("git clone https://github.com/0x90/wps-scripts")
             yellow()
             print("Downloaded!!!")
             time.sleep(5)
             while True:
                 Goyscript()
-        if x == "2":
+        if option == "2":
             os.system("cd")
             os.system("cd wps-scripts")
             os.system("cd goyscript")
             os.system("bash goyscript.sh")
-        if x == "3":
+        if option == "3":
             os.system("clear")
+            decoracion()
             start_menu()
 
 
@@ -171,7 +196,7 @@ def phoneinfoga():
     print("                                   2 -->> Execute Tool ")
     print("                                   3 -->> Exit         ")
     x = input("              ↳ ")
-    if x == "1":
+    if option == "1":
         os.system("git clone https://github.com/sundowndev/PhoneInfoga")
         os.system("cd PhoneInfoga/")
         os.system("python3 -m pip install -r requirements.txt")
@@ -181,13 +206,14 @@ def phoneinfoga():
         while True:
             phoneinfoga()
         
-    if x == "2":
+    if option == "2":
         os.system("cd")
         os.system("cd PhoneInfoga/")
         print("the phoneinfoga commands are:python3 phoneinfoga scan +number")
         print("example: python3 phoneinfoga scan +36897153568")
-    if x == "3":
+    if option == "3":
         os.system("clear")
+        decoracion()
         start_menu()
 
 
@@ -202,7 +228,7 @@ def ddos():
     x = input("              ↳ ")
 
     print("")
-    if x == "1":
+    if option == "1":
         yellow()
         print("")
         print("Downloading...")
@@ -213,11 +239,13 @@ def ddos():
         while True:
             ddos()
 
-    if x == "2":
+    if option == "2":
         print("")
         os.system("python3 ddos.py")
 
-    if x == "3":
+    if option == "3":
+        os.system("clear")
+        decoracion()
         start_menu()
 
 def freestresser():
@@ -227,10 +255,11 @@ def freestresser():
     red() 
     print("                                   1 -->> Web Tool (recomended)")
     print("                                   2 -->> Exit                 ")
-    if x == "1":
+    if option == "1":
         webbrowser.open_new("https://freestresser.to/?__cf_chl_jschl_tk__=45e1187bd8ef3af28372608c2cbd68ca423c9a1e-1621773113-0-AVsHsvqcFh3SMVdfq3-ftaxmdeBVE6vr52ooNPEL0ezKYzQIQA0eHihtnAd6zxikrTpYKOZZviMTZzDibfkN7x14k6Rp1gujhue6iYJjQr6dpId5bMuyTj9Xz_dGxwi-j4gkFRf4OFzgI_J9RxbJvwjPYMvbghXFjDmhROY4kxZSN_8mcH0AqYcieJmuz45jw0NMBcPW06aV-W_nt67q1W0Ve0_-O-2IkGHfTjm_F-IwgwvSXd0dZrSuCX3F7NFLqLS-46XEJNb_MH3zpTozS0ylTFwFEwUZ1Ra6GvvO4bWNsfHiJpihgyyax7oRYrDO9piCA0L-FtKBJbb9xAlukffIDQ7CaS-Gnt6iWq8tZum-BMCwxvpzXlThzZxszq_sbxXR9cPO2Hx7FmumCeHAdrY")
-    if x == "2":
+    if option == "2":
         os.system("clear")
+        decoracion()
         start_menu()
 
 
@@ -247,7 +276,7 @@ def Linset():
     print("                                   4 -->> Execute Tool          ")
     print("                                   5 -->> Exit                  ")
     x = input("              ↳ ")
-    if x == "1":
+    if option == "1":
         os.system("cd")
         os.system("git clone https://github.com/creadpag/linset.git ")
         os.system("sudo leafpad /etc/apt/sources.list")
@@ -257,14 +286,14 @@ def Linset():
         time.sleep(5)
         while True:
             linset()
-    if x == "2":
+    if option == "2":
         os.system("apt-get update")
         os.system("apt-get upgrade")
         time.sleep(1)
         while True:
             linset()
 
-    if x == "3":
+    if option == "3":
         os.system("apt-get install isc-dhcp-server")
         os.system("apt-get install hostapd")
         os.system("apt-get install lighttpd")
@@ -272,14 +301,15 @@ def Linset():
         time.sleep(5)
         os.system("clear")
         start_menu()
-    if x == "4":
+    if option == "4":
         os.system("cd")
         os.system(" cd linset")
         os.system("chmod +x linset")
         os.system("./linset")
-    if x == "5":
+    if option == "5":
         os.system("clear")
         start_menu()
+        decoracion()
 def phishing():
     os.system("clear")
 
@@ -292,7 +322,7 @@ def phishing():
     x = input("              ↳ ")
 
     print("")
-    if x == "1":
+    if option == "1":
         
         yellow()
         os.system("git clone https://github.com/htr-tech/zphisher")
@@ -303,14 +333,15 @@ def phishing():
         while True:
             phishing()
 
-    if x == "2":
+    if option == "2":
         print("")
         os.system("mv zphisher/* .")
         os.system("mv zphisher/.sites .")
         os.system("bash zphisher.sh")
 
-    if x == "3":
+    if option == "3":
         os.system("clear")
+        decoracion()
         start_menu()
 
 def wpscan():
@@ -335,6 +366,7 @@ def wpscan():
         red()
         input("Press INTRO to exit")
         while True:
+            decoracion()
             start_menu()
 
 def eviltrust():
@@ -363,6 +395,7 @@ def eviltrust():
         os.system("sudo bash evilTrust.sh -m terminal")
 
     if option == "3":
+        decoracion()
         start_menu()
 
 def sms():
@@ -391,6 +424,7 @@ def sms():
         os.system("bash SETSMS.sh")
 
     if option == "3":
+        decoracion()
         start_menu()
 
   
@@ -432,12 +466,10 @@ def decoracion():
     print("5                        --> goyscript")
     print("6                      --> phoneinfoga")
     print("7                             --> Ddos")
-    print("8                     --> freestresser")
     print("9                           --> Linset")
     print("10                        --> Zphisher")
     print("11                          --> wpscan")
     print("12                       --> eviltrust")
-    print("13                        --> SPAM SMS")
     print("14                              --Exit")
     option = input("              +-> ")
 
@@ -454,16 +486,16 @@ def decoracion():
         Ghostf()
 
     if option == "5":
-        Goyscript()
+        aircrack()
 
     if option == "6":
-        phoneinfoga()
+        Goyscript()
 
     if option == "7":
-        ddos()
+        phoneinfoga()
 
     if option == "8":
-        freestresser()
+        ddos()
 
     if option == "9":
         Linset()
@@ -478,9 +510,6 @@ def decoracion():
         eviltrust()
 
     if option == "13":
-        sms()
-
-    if option == "14":
         os.system("clear")
         exit()
 
@@ -490,8 +519,8 @@ __     ______       _              _
  \ \ / /| |_) |____| __/ _ \ / _ \| |
   \ V / |  __/_____| || (_) | (_) | |
    \_/  |_|         \__\___/ \___/|_|
-                    creditos: NOT 4n0nym4to002#9766 
-                              Yorkox0
+                                     V
+                                       2
 """
 print(banner)
 
