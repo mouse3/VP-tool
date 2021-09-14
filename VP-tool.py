@@ -17,45 +17,31 @@ def comprIP():
     print("n-host" + nombre_equipo)
     print("IP:" + direccion_equipo)
     time.sleep(5)
-    os.system("cls")
+    os.system("clear")
     decoracion()
     start_menu()
 
 #    <--Metasploit-->
-def TWebRS():
+def IPtracker():
         os.system("clear")
         red()
         print(banner)
         purple()
         print("              |                    1 -->> Download Tool")
-        print("              |                    2 -->> Download Tool 2")
-        print("              |                    3 -->> Execute Tool")
-        print("              |                    4 -->> Exit")
+        print("              |                    2 -->> Execute Tool")
+        print("              |                    3 -->> Exit")
         option = input("              ↳ ")
         if option == "1":
-            os.system("https://github.com/HackeRStrategy/Tool-Web-RS")
+            os.system("https://github.com/JasonJerry/IPtracker")
             print("Download!!!")
             time.sleep(1)
             while True:
-                TWebRS()
+                IPtracker()
         if option == "2":
             os.system("cd")
-            os.system("cd Tool-Web-RS")
-            os.system("bash ToolWeb-RS.sh")
-            time.sleep(5)
-            os.system("clear")
-            while True:
-                TWebRS()
+            os.system("cd IPtracker")
+            os.system("bash iptracker.sh")
         if option == "3":
-            os.system("cd")
-            os.system("cd Tool-Web-RS")
-            os.system("ls")
-            os.system("cd Real-Scann-DNS")
-            os.system("ls")
-            os.system("python2 Real-DNS")
-            while True:
-                TWebRS()
-        if option == "4":
             os.system("clear")
             decoracion()
             start_menu()
@@ -105,7 +91,6 @@ def msf():
             msf()
 
     if option == "2":
-        
         print("")
         ip = input("IP -->> ")
         port = input("PORT ->>")
@@ -146,15 +131,14 @@ def Ghostf():
             os.system("git clone https://github.com/ParikhKadam/ghost-1")
             os.system("cd ghost-1")
             os.system("ch mod +x install.sh")
-            os.system("./install.sh")
+            os.system("sudo ./install.sh")
             time.sleep(5)
             while True:
                 Ghostf()
         if option == "2":
-            os.system("ghost")
+            os.system("./ghost")
         if option == "3":
             os.system("clear")
-            decoracion()
             start_menu()
 
 
@@ -174,13 +158,11 @@ def Goyscript():
             while True:
                 Goyscript()
         if option == "2":
-            os.system("cd")
             os.system("cd wps-scripts")
             os.system("cd goyscript")
             os.system("bash goyscript.sh")
         if option == "3":
             os.system("clear")
-            decoracion()
             start_menu()
 
 
@@ -208,7 +190,6 @@ def phoneinfoga():
             phoneinfoga()
         
     if option == "2":
-        os.system("cd")
         os.system("cd PhoneInfoga/")
         print("the phoneinfoga commands are:python3 phoneinfoga scan +number")
         print("example: python3 phoneinfoga scan +36897153568")
@@ -245,8 +226,6 @@ def ddos():
         os.system("python3 ddos.py")
 
     if option == "3":
-        os.system("clear")
-        decoracion()
         start_menu()
 
 def freestresser():
@@ -254,13 +233,12 @@ def freestresser():
     purple()
     print(banner)
     red() 
-    print("                                   1 -->> Web Tool (recomended)")
+    print("                                   1 -->> Web Tool")
     print("                                   2 -->> Exit                 ")
+    option = input(" -->>")
     if option == "1":
         webbrowser.open_new("https://freestresser.to/?__cf_chl_jschl_tk__=45e1187bd8ef3af28372608c2cbd68ca423c9a1e-1621773113-0-AVsHsvqcFh3SMVdfq3-ftaxmdeBVE6vr52ooNPEL0ezKYzQIQA0eHihtnAd6zxikrTpYKOZZviMTZzDibfkN7x14k6Rp1gujhue6iYJjQr6dpId5bMuyTj9Xz_dGxwi-j4gkFRf4OFzgI_J9RxbJvwjPYMvbghXFjDmhROY4kxZSN_8mcH0AqYcieJmuz45jw0NMBcPW06aV-W_nt67q1W0Ve0_-O-2IkGHfTjm_F-IwgwvSXd0dZrSuCX3F7NFLqLS-46XEJNb_MH3zpTozS0ylTFwFEwUZ1Ra6GvvO4bWNsfHiJpihgyyax7oRYrDO9piCA0L-FtKBJbb9xAlukffIDQ7CaS-Gnt6iWq8tZum-BMCwxvpzXlThzZxszq_sbxXR9cPO2Hx7FmumCeHAdrY")
     if option == "2":
-        os.system("clear")
-        decoracion()
         start_menu()
 
 
@@ -308,9 +286,7 @@ def Linset():
         os.system("chmod +x linset")
         os.system("./linset")
     if option == "5":
-        os.system("clear")
         start_menu()
-        decoracion()
 def phishing():
     os.system("clear")
 
@@ -461,7 +437,7 @@ def white():
 def decoracion():
     # hola
     print("1                            --comprobacion de ip")
-    print("2                           --> TWebRS")
+    print("2                           --> IPtracker")
     print("3                         --> msfVenom")
     print("4                           --> ghostF")
     print("5                        --> goyscript")
@@ -476,40 +452,28 @@ def decoracion():
 
     if option == "1":
         comprIP()
-
     if option == "2":
-        TWebRS()
-
+        IPtracker()
     if option == "3":
         msf() 
-
     if option == "4":
         Ghostf()
-
     if option == "5":
         aircrack()
-
     if option == "6":
         Goyscript()
-
     if option == "7":
         phoneinfoga()
-
     if option == "8":
         ddos()
-
     if option == "9":
         Linset()
-
     if option == "10":
         phishing()
-
     if option == "11":
         wpscan()
-
     if option == "12":
         eviltrust()
-
     if option == "13":
         os.system("clear")
         exit()
