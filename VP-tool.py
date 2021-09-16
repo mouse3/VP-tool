@@ -32,13 +32,13 @@ def IPtracker():
         print("              |                    3 -->> Exit")
         option = input("              ↳ ")
         if option == "1":
-            os.system("https://github.com/JasonJerry/IPtracker")
+            os.system("git clone https://github.com/JasonJerry/IPtracker")
             print("Download!!!")
             time.sleep(1)
             while True:
                 IPtracker()
         if option == "2":
-            os.system("cd")
+            os.system("mv IPtracker/* .")
             os.system("cd IPtracker")
             os.system("bash iptracker.sh")
         if option == "3":
@@ -59,10 +59,12 @@ def aircrack():
         time.sleep(1)
         while True:
            aircrack()
+#TEMPORAL
     if option == "2":
         SSID = input("Nmb de la red:")
         CHANEL = input("puerto de red:")
-        os.system("airbase-ng --ssid"+SSID+"wlo1")
+        os.system("sudo airbase-ng --essid"+SSID+"wlo1")
+#temporal
     if option == "2":
         os.system("clear")
         decoracion()
@@ -436,18 +438,21 @@ def white():
 
 def decoracion():
     # hola
-    print("1                            --comprobacion de ip")
-    print("2                           --> IPtracker")
-    print("3                         --> msfVenom")
-    print("4                           --> ghostF")
-    print("5                        --> goyscript")
-    print("6                      --> phoneinfoga")
-    print("7                             --> Ddos")
-    print("9                           --> Linset")
-    print("10                        --> Zphisher")
-    print("11                          --> wpscan")
-    print("12                       --> eviltrust")
-    print("14                              --Exit")
+    print("1                 --comprobacion de ip")
+    print("2                        --> IPtracker")
+    print("3                         --> aircrack")
+    print("4                         --> msfVenom")
+    print("5                           --> ghostF")
+    print("6                        --> goyscript")
+    print("7                      --> phoneinfoga")
+    print("8                             --> Ddos")
+    print("9                      -->freestresser")
+    print("10                           --> Linset")
+    print("11                        --> Zphisher")
+    print("12                          --> wpscan")
+    print("13                       --> eviltrust")
+    print("14                        --> Spam SMS")
+    print("15                              --Exit")
     option = input("              +-> ")
 
     if option == "1":
@@ -455,11 +460,11 @@ def decoracion():
     if option == "2":
         IPtracker()
     if option == "3":
-        msf() 
+        aircrack() 
     if option == "4":
-        Ghostf()
+        msf()
     if option == "5":
-        aircrack()
+        Ghostf()
     if option == "6":
         Goyscript()
     if option == "7":
@@ -467,14 +472,16 @@ def decoracion():
     if option == "8":
         ddos()
     if option == "9":
-        Linset()
+        freestresser()
     if option == "10":
-        phishing()
+        Linset()
     if option == "11":
-        wpscan()
+        phishing()
     if option == "12":
         eviltrust()
     if option == "13":
+        sms()
+    if option == "14":
         os.system("clear")
         exit()
 
