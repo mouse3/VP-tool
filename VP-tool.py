@@ -38,8 +38,8 @@ def kickout():
             while True:
                 kickout()
         if option == "2":
-            os.system("mv kickthemoutr/* .")
-            os.system("cd kickthemoutr")
+            os.system("mv kickthemout/* .")
+            os.system("cd kickthemout")
             os.system("sudo -H pip3 install -r requirements.txt")
             os.system("python kickthemout.py")
         if option == "3":
