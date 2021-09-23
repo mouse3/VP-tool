@@ -22,6 +22,30 @@ def comprIP():
     start_menu()
 
 #    <--Metasploit-->
+def kickout():
+        os.system("clear")
+        red()
+        print(banner)
+        purple()
+        print("              |                    1 -->> Download Tool")
+        print("              |                    2 -->> Execute Tool")
+        print("              |                    3 -->> Exit")
+        option = input("              ↳ ")
+        if option == "1":
+            os.system("git clone https://github.com/k4m4/kickthemout.git")
+            print("Download!!!")
+            time.sleep(1)
+            while True:
+                kickout()
+        if option == "2":
+            os.system("mv kickthemoutr/* .")
+            os.system("cd kickthemoutr")
+            os.system("sudo python -m pip install -r requirements.txt")
+            os.system("python kickthemout.py")
+        if option == "3":
+            os.system("clear")
+            decoracion()
+            start_menu()
 def IPtracker():
         os.system("clear")
         red()
@@ -438,50 +462,54 @@ def white():
 
 def decoracion():
     # hola
-    print("1                 --comprobacion de ip")
-    print("2                        --> IPtracker")
-    print("3                         --> aircrack")
-    print("4                         --> msfVenom")
-    print("5                           --> ghostF")
-    print("6                        --> goyscript")
-    print("7                      --> phoneinfoga")
-    print("8                             --> Ddos")
-    print("9                      -->freestresser")
-    print("10                           --> Linset")
-    print("11                        --> Zphisher")
-    print("12                          --> wpscan")
-    print("13                       --> eviltrust")
-    print("14                        --> Spam SMS")
-    print("15                              --Exit")
+    print("1                       --> comprobar IP")
+    print("2                       -->kickout")
+    print("3                      --> IPtracker")
+    print("4                       --> aircrack")
+    print("5                      --> msfVenom")
+    print("6                        -> ghostF  ")
+    print("7                     --> goyscript")
+    print("8                    --> phoneinfoga")
+    print("9                           --> Goyscript")
+    print("10                  -->phoneinfoga")
+    print("11                      --> ddos")
+    print("12                      --> freestresser")
+    print("13                       --> linset")
+    print("14                       --> zphisher")
+    print("15                     --> eviltrust")
+    print("16                      --> Spam SMS")
+    print("17                            --Exit"
     option = input("              +-> ")
 
     if option == "1":
         comprIP()
     if option == "2":
-        IPtracker()
+        kickout()
     if option == "3":
-        aircrack() 
+        IPtracker()
     if option == "4":
-        msf()
+        aircrack() 
     if option == "5":
-        Ghostf()
+        msf()
     if option == "6":
-        Goyscript()
+        Ghostf()
     if option == "7":
-        phoneinfoga()
+        Goyscript()
     if option == "8":
-        ddos()
+        phoneinfoga()
     if option == "9":
-        freestresser()
+        ddos()
     if option == "10":
-        Linset()
+        freestresser()
     if option == "11":
-        phishing()
+        Linset()
     if option == "12":
-        eviltrust()
+        phishing()
     if option == "13":
-        sms()
+        eviltrust()
     if option == "14":
+        sms()
+    if option == "15
         os.system("clear")
         exit()
 
