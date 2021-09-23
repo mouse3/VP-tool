@@ -509,7 +509,7 @@ def decoracion():
         eviltrust()
     if option == "14":
         sms()
-    if option == "15
+    if option == "15":
         os.system("clear")
         exit()
 
