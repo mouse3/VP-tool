@@ -478,7 +478,7 @@ def decoracion():
     print("14                       --> zphisher")
     print("15                     --> eviltrust")
     print("16                      --> Spam SMS")
-    print("17                            --Exit"
+    print("17                            --Exit")
     option = input("              +-> ")
 
     if option == "1":
