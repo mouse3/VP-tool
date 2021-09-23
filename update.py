@@ -1,6 +1,13 @@
 import os
 import time
-print("si te marca una opcion de eligir Y o N siempre pon Y")
-time.sleep(5)
-os.system("sudo apt-get update")
-os.system("sudo apt-get upgrade")
+def RunDebian():
+  os.system("sudo apt-get update && sudo apt-get install nmap")
+  while True:
+    exit
+print("1--Run (on debian)")
+print("2--exit")
+x = input("__--->")
+if x == "1":
+  RunDebian()
+if x == "2":
+  exit
