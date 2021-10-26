@@ -20,32 +20,30 @@ def comprIP():
     os.system("clear")
     decoracion()
     start_menu()
-
-#    <--Metasploit-->
-def kickout():
-        os.system("clear")
-        red()
-        print(banner)
-        purple()
+# <----Enviar sms falso---->
+def fakesms():
+    os.system("clear")
+        print("banner")
         print("              |                    1 -->> Download Tool")
         print("              |                    2 -->> Execute Tool")
         print("              |                    3 -->> Exit")
         option = input("              ↳ ")
         if option == "1":
-            os.system("git clone https://github.com/k4m4/kickthemout.git")
-            print("Download!!!")
+            os.system("git clone https://github.com/Darkmux/DarkSMS")
+            print("Downloaded!!!")
             time.sleep(1)
             while True:
-                kickout()
+                famesms()
         if option == "2":
-            os.system("mv kickthemout/* .")
-            os.system("cd kickthemout")
-            os.system("sudo -H pip3 install -r requirements.txt")
-            os.system("python kickthemout.py")
+            os.system("mv DarkSMS/* .")
+            os.system("cd DarkSMS")
+            os.system("bash darksms.sh")
         if option == "3":
             os.system("clear")
             decoracion()
             start_menu()
+
+#    <--Metasploit-->
 def IPtracker():
         os.system("clear")
         red()
@@ -69,7 +67,6 @@ def IPtracker():
             os.system("clear")
             decoracion()
             start_menu()
-
 def aircrack():
     print("1       |          -->install")
     print("2       |          -->Run")
@@ -166,8 +163,6 @@ def Ghostf():
         if option == "3":
             os.system("clear")
             start_menu()
-
-
 def Goyscript():
         os.system("clear")
         purple()
@@ -190,12 +185,6 @@ def Goyscript():
         if option == "3":
             os.system("clear")
             start_menu()
-
-
-
-
-
-
 def phoneinfoga():
     os.system("clear")
     purple()
@@ -223,8 +212,6 @@ def phoneinfoga():
         os.system("clear")
         decoracion()
         start_menu()
-
-
 def ddos():
     os.system("clear")
     red()
@@ -253,7 +240,6 @@ def ddos():
 
     if option == "3":
         start_menu()
-
 def freestresser():
     os.system("clear")
     purple()
@@ -263,13 +249,9 @@ def freestresser():
     print("                                   2 -->> Exit                 ")
     option = input(" -->>")
     if option == "1":
-        webbrowser.open_new("https://freestresser.to/?__cf_chl_jschl_tk__=45e1187bd8ef3af28372608c2cbd68ca423c9a1e-1621773113-0-AVsHsvqcFh3SMVdfq3-ftaxmdeBVE6vr52ooNPEL0ezKYzQIQA0eHihtnAd6zxikrTpYKOZZviMTZzDibfkN7x14k6Rp1gujhue6iYJjQr6dpId5bMuyTj9Xz_dGxwi-j4gkFRf4OFzgI_J9RxbJvwjPYMvbghXFjDmhROY4kxZSN_8mcH0AqYcieJmuz45jw0NMBcPW06aV-W_nt67q1W0Ve0_-O-2IkGHfTjm_F-IwgwvSXd0dZrSuCX3F7NFLqLS-46XEJNb_MH3zpTozS0ylTFwFEwUZ1Ra6GvvO4bWNsfHiJpihgyyax7oRYrDO9piCA0L-FtKBJbb9xAlukffIDQ7CaS-Gnt6iWq8tZum-BMCwxvpzXlThzZxszq_sbxXR9cPO2Hx7FmumCeHAdrY")
+        webbrowser.open_new("https://freestresser.to/")
     if option == "2":
         start_menu()
-
-
-
-
 def Linset():
     os.system("clear")
     purple()
@@ -462,53 +444,51 @@ def white():
 
 def decoracion():
     # hola
-    print("1                       --> comprobar IP")
-    print("2                       -->kickout")
-    print("3                      --> IPtracker")
-    print("4                       --> aircrack")
-    print("5                      --> msfVenom")
-    print("6                        -> ghostF  ")
-    print("7                     --> goyscript")
-    print("8                    --> phoneinfoga")
-    print("9                           --> Goyscript")
-    print("10                  -->phoneinfoga")
-    print("11                      --> ddos")
-    print("12                      --> freestresser")
-    print("13                       --> linset")
-    print("14                       --> zphisher")
-    print("15                     --> eviltrust")
-    print("16                      --> Spam SMS")
-    print("17                            --Exit")
+    print("1                 --comprobacion de ip")
+    print("2                        --> IPtracker")
+    print("3                         --> msfVenom")
+    print("4                         --> aircrack")
+    print("5                        --> goyscript")
+    print("6                           --> ghostF")
+    print("7                      --> phoneinfoga")
+    print("9                             --> Ddos")
+    print("9                      -->freestresser")
+    print("10                          --> Linset")
+    print("11                        --> Zphisher")
+    print("12                       --> eviltrust")
+    print("13                        --> Spam SMS")
+    print("14                          -->FAKEsms")
+    print("15                              --Exit")
     option = input("              +-> ")
 
     if option == "1":
         comprIP()
     if option == "2":
-        kickout()
-    if option == "3":
         IPtracker()
-    if option == "4":
+    if option == "3":
         aircrack() 
-    if option == "5":
+    if option == "4":
         msf()
-    if option == "6":
+    if option == "5":
         Ghostf()
-    if option == "7":
+    if option == "6":
         Goyscript()
-    if option == "8":
+    if option == "7":
         phoneinfoga()
-    if option == "9":
+    if option == "8":
         ddos()
-    if option == "10":
+    if option == "9":
         freestresser()
-    if option == "11":
+    if option == "10":
         Linset()
-    if option == "12":
+    if option == "11":
         phishing()
-    if option == "13":
+    if option == "12":
         eviltrust()
-    if option == "14":
+    if option == "13":
         sms()
+    if option == "14":
+        fakesms()
     if option == "15":
         os.system("clear")
         exit()
