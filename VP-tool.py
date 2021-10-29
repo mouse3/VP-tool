@@ -459,7 +459,7 @@ def decoracion():
         phishing()
     if option == "11":
         eviltrust()
-    if option == "12:
+    if option == "12":
         sms()
     if option == "13
         fakesms()
