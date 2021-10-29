@@ -179,9 +179,9 @@ def Goyscript():
             while True:
                 Goyscript()
         if option == "2":
-            os.system("cd wps-scripts")
-            os.system("cd goyscript")
-            os.system("bash goyscript.sh")
+            os.system("cd wps-scripts/goyscript")
+            os.system("chmod +x conectar.sh")
+            os.system("sudo bash conectar.sh")
         if option == "3":
             os.system("clear")
             start_menu()
@@ -472,7 +472,7 @@ def decoracion():
     if option == "5":
         Goyscript()
     if option == "6":
-        Ghost()
+        Ghostf()
     if option == "7":
         phoneinfoga()
     if option == "8":
