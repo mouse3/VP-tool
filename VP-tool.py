@@ -67,29 +67,6 @@ def IPtracker():
             os.system("clear")
             decoracion()
             start_menu()
-def aircrack():
-    print("1       |          -->install")
-    print("2       |          -->Run")
-    print("3       |          -->exit")
-    option = input("              ↳")
-    if option == "1":
-        os.system("sudo apt-get upgrade")
-        os.system("sudo apt-get update")
-        os.system("sudo apt-get install aircrack-ng")
-        print("Download!!!")
-        time.sleep(1)
-        while True:
-           aircrack()
-#TEMPORAL
-    if option == "2":
-        SSID = input("Nmb de la red:")
-        CHANEL = input("puerto de red:")
-        os.system("sudo airbase-ng --essid"+SSID+"wlo1")
-#temporal
-    if option == "2":
-        os.system("clear")
-        decoracion()
-        start_menu()
 def msf():
     os.system("clear")
     print(banner)
@@ -154,7 +131,7 @@ def Ghostf():
             os.system("git clone https://github.com/ParikhKadam/ghost-1")
             os.system("cd ghost-1")
             os.system("chmod +x install.sh")
-            os.system("sudo ./install.sh")
+            os.system("sudo bash install.sh")
             time.sleep(5)
             while True:
                 Ghostf()
@@ -447,7 +424,6 @@ def decoracion():
     print("1                 --comprobacion de ip")
     print("2                        --> IPtracker")
     print("3                         --> msfVenom")
-    print("4                         --> aircrack")
     print("5                        --> goyscript")
     print("6                           --> ghostF")
     print("7                      --> phoneinfoga")
@@ -468,28 +444,26 @@ def decoracion():
     if option == "3":
         msf()
     if option == "4":
-        aircrack()
-    if option == "5":
         Goyscript()
-    if option == "6":
+    if option == "5":
         Ghostf()
-    if option == "7":
+    if option == "6":
         phoneinfoga()
-    if option == "8":
+    if option == "7":
         ddos()
-    if option == "9":
+    if option == "8":
         freestresser()
-    if option == "10":
+    if option == "9":
         Linset()
-    if option == "11":
+    if option == "10":
         phishing()
-    if option == "12":
+    if option == "11":
         eviltrust()
-    if option == "13":
+    if option == "12:
         sms()
-    if option == "14":
+    if option == "13
         fakesms()
-    if option == "15":
+    if option == "14:
         os.system("clear")
         exit()
 
