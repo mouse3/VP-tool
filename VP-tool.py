@@ -153,7 +153,7 @@ def Ghostf():
         if option == "1":
             os.system("git clone https://github.com/ParikhKadam/ghost-1")
             os.system("cd ghost-1")
-            os.system("ch mod +x install.sh")
+            os.system("chmod +x install.sh")
             os.system("sudo ./install.sh")
             time.sleep(5)
             while True:
