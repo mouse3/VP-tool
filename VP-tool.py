@@ -466,13 +466,13 @@ def decoracion():
     if option == "2":
         IPtracker()
     if option == "3":
-        aircrack() 
-    if option == "4":
         msf()
+    if option == "4":
+        aircrack()
     if option == "5":
-        Ghostf()
-    if option == "6":
         Goyscript()
+    if option == "6":
+        Ghost()
     if option == "7":
         phoneinfoga()
     if option == "8":
