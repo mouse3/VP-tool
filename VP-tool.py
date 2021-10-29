@@ -461,9 +461,9 @@ def decoracion():
         eviltrust()
     if option == "12":
         sms()
-    if option == "13
+    if option == "13":
         fakesms()
-    if option == "14:
+    if option == "14":
         os.system("clear")
         exit()
 
