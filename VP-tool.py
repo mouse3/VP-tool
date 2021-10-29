@@ -23,25 +23,25 @@ def comprIP():
 # <----Enviar sms falso---->
 def fakesms():
     os.system("clear")
-        print("banner")
-        print("              |                    1 -->> Download Tool")
-        print("              |                    2 -->> Execute Tool")
-        print("              |                    3 -->> Exit")
-        option = input("              ↳ ")
-        if option == "1":
-            os.system("git clone https://github.com/Darkmux/DarkSMS")
-            print("Downloaded!!!")
-            time.sleep(1)
-            while True:
-                famesms()
-        if option == "2":
-            os.system("mv DarkSMS/* .")
-            os.system("cd DarkSMS")
-            os.system("bash darksms.sh")
-        if option == "3":
-            os.system("clear")
-            decoracion()
-            start_menu()
+    print("banner")
+    print("              |                    1 -->> Download Tool")
+    print("              |                    2 -->> Execute Tool")
+    print("              |                    3 -->> Exit")
+    option = input("              ↳ ")
+    if option == "1": 
+        os.system("git clone https://github.com/Darkmux/DarkSMS")
+        print("Downloaded!!!")
+        time.sleep(1)
+        while True:
+            fakesms()
+    if option == "2":
+        os.system("mv DarkSMS/* .")
+        os.system("cd DarkSMS")
+        os.system("bash darksms.sh")
+    if option == "3":
+        os.system("clear")
+        decoracion()
+        start_menu()
 
 #    <--Metasploit-->
 def IPtracker():
