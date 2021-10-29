@@ -1,7 +1,11 @@
 import os
 import time
 def RunDebian():
-  os.system("sudo apt-get update && sudo apt-get install nmap")
+  os.system("sudo apt-get update")
+  os.system("sudo apt-get upgrade")
+  os.system("sudo apt-get update")
+  os.system("sudo apt-get install nmap")
+  os.system("sudo apt-get install hostapd")
   while True:
     exit
 print("1--Run (on debian)")
