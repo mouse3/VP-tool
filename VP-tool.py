@@ -10,6 +10,11 @@ def start_menu():
     os.system("clear")
     print(banner)
     print(decoracion)
+#  <----sn1per---->
+def sn1per():
+os.system("git clone https://github.com/1N3/Sn1per")
+os.system("cd Sn1per")
+os.system("sudo bash install.sh")
 #  <----comprobar IP---->
 def comprIP():
     nombre_equipo = socket.gethostname()
